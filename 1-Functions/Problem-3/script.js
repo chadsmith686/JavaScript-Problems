@@ -3,8 +3,8 @@ function howManyLetters(a, b) {
     let randomLetter = b.toLowerCase();
     let letterCount = 0; 
 
-    for (let i of randomLetter){
-    if (str.includes(i)) {
+    for (let i of str){
+    if (randomLetter.includes(i)) {
        letterCount++
         }
     }
