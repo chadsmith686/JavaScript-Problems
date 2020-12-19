@@ -1,13 +1,12 @@
 let vowels = ['a', 'e', 'i', 'o', 'u']
 
 function numOfVowels(sentence) {
-    let letters = sentence.split('');
+    let letter = sentence.toLowerCase().split('');
     let vowelCount = 0;
-    for (let letters of sentence.toLowerCase()){
-        if (vowels.includes(letters)) {
+    for (let i of letter){
+        if (vowels.includes(i)) {
            vowelCount++
         }
     }
     return vowelCount;
 }
-    
